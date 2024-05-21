@@ -1,20 +1,14 @@
 
 public class Rectlf extends MyFrame{
 	public void run() {
-		int x=30;
-		int c=0;
+		int x=20;
+		int y=15;
+		setColor(0,128,0);
 		int i;
 		for(i=0;i<9;i++) {
-			
-			setColor(c,c,c);
-			
-			if(i==0) {
-				fillRect(x,80,10,100);
-		    }else{
-		    	fillRect(x,80,10,100);
-		    }
-			x+=20;
-			c+=20;
+		   fillRect(x,x,y,y);
+		   x+=y;
+		   y+=15;
 		}
 	}	
 }
