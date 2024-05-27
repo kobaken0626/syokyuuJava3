@@ -2,12 +2,15 @@
 public class DisplayRectsSlow extends MyFrame{
 	public void run() {
 		
-		setColor(0,128,0);
 		int x=30;
 		
 		while(x<=170) {
-			fillRect(x,80,10,100);
-			x+=20;
+			//(1)画面を消す
+			clear();
+			//(2)四角形を表示する
+			setColor(0,128,0);
+			fillOval(x,80,100,100);//円を作る
+			x+=5;
 			sleep(1);
 		}
 	}
